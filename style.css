@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/*
+Theme Name: fundza.lite
+Theme URI:
+Description: for FunDza Mobile Library
+Version: 0.1
+Author: FunDza Literacy Trust
+Author URI:
+*/
+
+/*Reset wordpress default margin*/
+body{
+    margin:0 ;
+}
+
+/*top page*/
+
+/*Header*/
+#topBar{
+    width: 100%;
+    background-color: #fcd700;
+    height: 60px;
+}
+
+/*Logo*/
+#logo{
+    display: inline-block;
+    float: left;
+}
+a{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+/*Humberger Menu*/
+#ham-menu {
+    background-color: #4b4b4b; /*Menu's background*/
+    box-sizing: border-box;
+    height: 100%;
+    position: fixed;
+    right: -250px; /*Menu's width*/
+    top: 0;
+    transition: transform 0.3s linear 0s; /*0.3s is the time to transit*/
+    width: 250px; /*Menu's width*/
+    z-index: 1000;
+    height: 183px;
+    border: solid 1px #fcd700;
+}
+.hamElements{
+    height: 60px;
+    text-align: center;
+    border-bottom: solid 1px #fcd700;
+}
+.hamElements a{
+    display: block;
+    padding-top: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+#menu-background {
+    background-color: #333; /*Black*/
+    display: block;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.3s linear 0s; /*0.3s is the time to transit*/
+    width: 100%;
+    z-index: -1;
+}
+#menu-icon {
+    background-color: #fff; /*Icon's background*/
+    border-radius: 0 0 0 10px; /*Radius for left-bottom*/
+    color: #333; /*Icon's color*/
+    cursor: pointer;
+    display: block;
+    font-size: 50px; /*Icon size*/
+    height: 50px; /*Icon height*/
+    line-height: 50px; /*Centalize vertical position*/
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 50px; /*Icon width*/
+    transition: all 0.3s linear 0s; /*0.3s is the time to transit*/
+    z-index: 1000;
+}
+#menu-cb {
+    display: none; /*Hide menu*/
+}
+#menu-cb:checked ~ #ham-menu,
+#menu-cb:checked ~ #menu-icon {
+    transform: translate(-250px); /*Menu's width*/
+}
+#menu-cb:checked ~ #menu-background {
+    opacity: 0.5;
+    z-index: 999;
+}
+
+/*Welcome Message*/
+#welcomeMessage{
+    width: 100%;
+    height: 15px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#message{
+    padding-left: 10px;
+}
+
+/*New Collections*/
+#newCollections{
+    width: 100%;
+    background-color: #7accc8;
+    height: 180px;
+    font-family: sans-serif;
+}
+
+/*Our Vision*/
+#ourVision{
+    width: 100%;
+    background-color: #c4df9b;
+    height: 60px;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#fundzaPolicy{
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*Popular Collections*/
+#popularCollections{
+    width: 100%;
+    background-color: #f9ad81;
+    height: 180px;
+    font-family: sans-serif;
+}
+
+/*Each Collections Labels*/
+.collections{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.seeMore{
+    float: right;
+    padding-right: 10px;
+    padding-top: 3px;
+}
+.collectionArray{
+    text-align: center;
+    padding-top: 10px;
+}
+.pdf{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*Back to top*/
+#pageTopLink{
+    height: 15px;
+}
+#pageTopLink a{
+    padding-left: 5px;
+    display: block;
+    padding-top: 5px;
+    font-family: sans-serif;
+}
+
+/*Footer*/
+#pageFooter{
+    width: 100%;
+    border-top: solid 1px #CCCCCC;
+    margin-top: 15px;
+    background-color: #4b4b4b;
+    padding-bottom: 1px;
+}
+
+/*Copyright*/
+#copyright small{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+    color: #f9efec;
+}
+
+/*Static page*/
+#staticBody{
+    width: 100%;
+}
+#staticText{
+    font-family: sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+}
