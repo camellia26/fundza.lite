@@ -1,28 +1,27 @@
 <?php get_header(); ?>
 
     <div id="pageBody">
-
-        <div id="newCollections">
-            <div class="collections">New Collections</div>
-                <div class="collectionArray">
-                    <span class="pdf"><a href=""><img src="images/sample.png"></a></span>
-                    <span class="pdf"><a href=""><img src="images/sample.png"></a></span>
-                    <span class="pdf"><a href=""><img src="images/sample.png"></a></span>
-                </div>
-            <div class="seeMore"><a href="">See more</a></div>
+        <div id="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></div>
+        <div id="bookDetail">
+            Title Title Title<br>
+            Author Author Author<br>
+            Abstract Abstract Abstract<br>
+            Tag Tag Tag
         </div>
 
-        <div id="popularCollections">
-            <div class="collections">Popular</div>
-                <div class="collectionArray">
-                    <span class="pdf"><a href=""><img src="images/sample.png"></a></span>
-                    <span class="pdf"><a href=""><img src="images/sample.png"></a></span>
-                    <span class="pdf"><a href=""><img src="images/sample.png"></a></span>
+        <div id="staticBody">
+            <?php if(have_posts()): while(have_posts()): the_post(); ?>
+                 <div id="staticText">
+                     <?php the_content(); ?>
                 </div>
-            <div class="seeMore"><a href="">See more</a></div>
+            <?php endwhile;endif; ?>
+        </div><!--content-->
+
+        <div id="buttons">
+            <a href="#" id="readButton">Read on the page</a>
+            <a href="#" id="downloadButton">Download as pdf</a>
         </div>
+        <div style="clear:both;"></div>
     </div>
-
-    <div id="pageTopLink"><a href="#">▲ Back to top</a></div>
 
 <?php get_footer(); ?>
