@@ -23,7 +23,7 @@
             <label id="menu-background" for="menu-cb"></label>
             <div id="ham-menu">
                 <div class="hamElements"><a href="<?php echo home_url(); ?>">TOP</a></div>
-                <div class="hamElements"><a href="">COLLECTIONS</a></div>
+                <div class="hamElements"><a href="<?php echo home_url('/collections') ?>">COLLECTIONS</a></div>
                 <div class="hamElements"><a href="<?php echo home_url('/about') ?>">ABOUT</a></div>
             </div>
 

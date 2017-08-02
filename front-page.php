@@ -22,7 +22,7 @@
                     <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
                     <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
                 </div>
-            <div class="seeMore"><a href="">See more</a></div>
+            <div class="seeMore"><a href="<?php echo home_url('/collections'); ?>">See more</a></div>
         </div>
         
         <div id="ourVision">
@@ -36,7 +36,7 @@
                     <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
                     <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
                 </div>
-            <div class="seeMore"><a href="">See more</a></div>
+            <div class="seeMore"><a href=""<?php echo home_url('/collections'); ?>>See more</a></div>
         </div>
     </div>
 
