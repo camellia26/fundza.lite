@@ -247,7 +247,6 @@ a{
     display: inline-block;
     float: left;
     font-family: sans-serif;
-    border-bottom: solid 2px;
     border-radius: 3px;
     margin-left: 15px;
     padding: 10px;
@@ -277,4 +276,3 @@ a{
     transform: translateY(3px);
     border-bottom: none;
 }
-
