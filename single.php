@@ -8,23 +8,23 @@
               if($imgurl){
           ?>
           <img src="<?php echo $imgurl[0]; ?>">
-          <?php } ?>
+          <?php } echo $imgurl;?>
         </div>
 
         <div id="bookDetail">
-            
+
             <?php the_title(); ?><br>
-            
+
             <?php
                 $txt = get_field('author');
                 if($txt){ ?>
                           Author: <?php echo $txt;
                         } ?><br>
-            
+
             <?php
                 $area = get_field('abstract');
                 if($txt){ echo $area; } ?><br>
-            
+
             <?php the_tags(); ?>
         </div>
 
@@ -40,7 +40,7 @@
             <a href="#" id="readButton">Read on the page</a>
             <?php $file = get_field('pdf');
                   if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
-                     <?php } ?>
+                     <?php } echo $file;?>
         </div>
         <div style="clear:both;"></div>
     </div>
