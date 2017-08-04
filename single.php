@@ -13,19 +13,31 @@
 
         <div id="bookDetail">
 
-            <?php the_title(); ?><br>
+            <div id="detailTitle"><?php the_title(); ?></div>
 
+            <div id="detailAuthor">
             <?php
                 $txt = get_field('author');
                 if($txt){ ?>
                           Author: <?php echo $txt;
-                        } ?><br>
-
+                        } ?>
+            </div>
+            
+            <div id="detailAbstract">
             <?php
                 $area = get_field('abstract');
-                if($txt){ echo $area; } ?><br>
+                if($txt){ echo $area; } ?>
+            </div>
 
-            <?php the_tags(); ?>
+            <div id="detailDate">
+            <?php
+                $date = get_post_time("F jS / Y");
+                if($date){ ?>
+                           Publish: <?php echo $date;
+                         } ?>
+            </div>
+
+            <div id="detailTags"><?php the_tags(); ?></div>
         </div>
 
         <div id="buttons">
@@ -51,7 +63,7 @@
             <?php if(have_posts()): while(have_posts()): the_post(); ?>
                  <div id="staticContentText">
                      <?php the_content(); ?>
-                </div>
+                 </div>
             <?php endwhile;endif; ?>
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
         </div><!--content-->

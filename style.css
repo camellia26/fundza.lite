@@ -229,16 +229,36 @@ a{
 /*Detail page*/
 #thumbnail{
     margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
-}
-#thumnail img{
-    border: solid 1px;
-    background: yellow;
 }
 #bookDetail{
     font-family: sans-serif;
     text-align: center;
 }
+
+#detailTitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#detailAuthor{
+    margin-bottom: 5px;
+}
+#detailAbstract{
+    text-align: left;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+#detailDate{
+    margin-bottom: 5px;
+}
+#detailTags{
+    font-weight: bold;
+}
+
 #buttons{
     padding-top: 15px;
     padding-bottom: 10px;
@@ -263,12 +283,13 @@ a{
 #staticContentBody{
     width: 100%;
     display: none;
+    margin-top: 15px;
 }
 #staticContentText{
     display: none;
     font-family: sans-serif;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #downloadButton{
