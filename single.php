@@ -28,7 +28,25 @@
             <?php the_tags(); ?>
         </div>
 
-        <div id="staticBody">
+        <div id="buttons">
+            <form id="readButton">
+                <input type="button" value="Read on the page" onclick="showContent(1)">
+            </form>
+            <script>
+                function showContent(num){
+                    if (num == 1){
+                        document.getElementById("staticContentBody").style.display="block";
+                    }
+                }
+            </script>
+
+            <?php $file = get_field('pdf');
+                  if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
+                     <?php } ?>
+        </div>
+        <div style="clear:both;"></div>
+
+        <div id="staticContentBody">
             <?php if(have_posts()): while(have_posts()): the_post(); ?>
                  <div id="staticText">
                      <?php the_content(); ?>
@@ -36,13 +54,6 @@
             <?php endwhile;endif; ?>
         </div><!--content-->
 
-        <div id="buttons">
-            <a href="#" id="readButton">Read on the page</a>
-            <?php $file = get_field('pdf');
-                  if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
-                     <?php } ?>
-        </div>
-        <div style="clear:both;"></div>
     </div>
 
 <?php get_footer(); ?>
