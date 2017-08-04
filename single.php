@@ -8,7 +8,7 @@
               if($imgurl){
           ?>
           <img src="<?php echo $imgurl[0]; ?>">
-          <?php } echo $imgurl;?>
+          <?php } ?>
         </div>
 
         <div id="bookDetail">
@@ -40,7 +40,7 @@
             <a href="#" id="readButton">Read on the page</a>
             <?php $file = get_field('pdf');
                   if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
-                     <?php } echo $file;?>
+                     <?php } ?>
         </div>
         <div style="clear:both;"></div>
     </div>
