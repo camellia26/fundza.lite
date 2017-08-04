@@ -229,8 +229,11 @@ a{
 /*Detail page*/
 #thumbnail{
     margin-top: 10px;
-    margin-bottom: 10px;
     text-align: center;
+}
+#thumnail img{
+    border: solid 1px;
+    background: yellow;
 }
 #bookDetail{
     font-family: sans-serif;
@@ -285,7 +288,6 @@ a{
 #staticContentBody{
     width: 100%;
     display: none;
-    margin-top: 15px;
 }
 #staticContentText{
     display: none;
