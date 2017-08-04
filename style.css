@@ -264,6 +264,12 @@ a{
     width: 100%;
     display: none;
 }
+#staticContentText{
+    display: none;
+    font-family: sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 #downloadButton{
     display: inline-block;

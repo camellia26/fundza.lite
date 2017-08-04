@@ -36,6 +36,7 @@
                 function showContent(num){
                     if (num == 1){
                         document.getElementById("staticContentBody").style.display="block";
+                        document.getElementById("staticContentText").style.display="block";
                     }
                 }
             </script>
@@ -48,7 +49,7 @@
 
         <div id="staticContentBody">
             <?php if(have_posts()): while(have_posts()): the_post(); ?>
-                 <div id="staticText">
+                 <div id="staticContentText">
                      <?php the_content(); ?>
                 </div>
             <?php endwhile;endif; ?>
