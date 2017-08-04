@@ -53,6 +53,7 @@
                      <?php the_content(); ?>
                 </div>
             <?php endwhile;endif; ?>
+            <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
         </div><!--content-->
 
     </div>
