@@ -1,5 +1,4 @@
 <?php
-
 function is_mobile(){
     $useragents = array(
  'iPhone',          // iPhone
