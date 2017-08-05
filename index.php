@@ -9,7 +9,6 @@
                     <?php echo get_the_date(); ?>
                     <?php the_permalink(); ?>
                     <?php echo get_the_title(); ?>
-                    <?php the_content(); ?>
                 </div>
             <?php endwhile; ?>
         <?php else: ?>
