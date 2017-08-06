@@ -27,19 +27,9 @@
                         );
                         $new_query = new WP_Query($new_args);
                     ?>
-                    <?php /**
                     <?php if ($new_query->have_posts()): ?>
                         <?php while ($new_query->have_posts()) : $new_query->the_post(); ?>
-                            <div id="topThumbnail">
-                                <?php
-                                    $img = get_field('thumbnail');
-                                    $imgurl = wp_get_attachment_image_src($img);
-                                    if($imgurl){
-                                ?>
-                                    <a href="<?php the_permalink(); ?>"><img src="<?php echo $imgurl[0]; ?>"></a>
-                                <?php } ?>
-                            </div>
-                    **/ ?>
+                            <?php the_permalink(); ?>
                 </div>
             <div class="seeMore"><a href="<?php echo home_url('/collections'); ?>">See more</a></div>
         </div>
