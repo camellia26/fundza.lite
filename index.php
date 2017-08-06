@@ -6,7 +6,6 @@
                 <option value="">Sort by</option>
                 <option value="<?php echo add_query_arg( array('order' => 'DESC') ); ?>">New</option>
                 <option value="<?php echo add_query_arg( array('order' => 'ASC') ); ?>">Old</option>
-                <option value="<?php /*echo add_query_arg( array('meta_key' => 'views', 'orderby' => 'meta_value_num', 'order' => 'DESC') ); */ ?>">Popular</option>
             </select>
         </div>
         <?php echo?>
