@@ -329,6 +329,11 @@ a{
     transform: translateY(3px);
     border-bottom: none;
 }
+input[type="button"]{
+    font-family: sans-serif;
+    background: green;
+    color: #fff;
+}
 
 #staticContentBody{
     width: 100%;
