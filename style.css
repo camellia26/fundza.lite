@@ -214,9 +214,9 @@ a{
     display: inline-block;
     padding-left: 30px;
 }
-#bookThumb a{
-    border: 1px solid; /*temporary*/
-    background: yellow;
+#bookThumb img{
+    max-width: 100px;
+    height: auto;
 }
 #bookInfo{
     display: inline-block;
