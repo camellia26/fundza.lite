@@ -8,7 +8,6 @@
                 <option value="<?php echo add_query_arg( array('order' => 'ASC') ); ?>">Old</option>
             </select>
         </div>
-        <?php echo?>
 
         <?php if (have_posts()): ?>
             <?php while (have_posts()) : the_post(); ?>
