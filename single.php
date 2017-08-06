@@ -22,7 +22,7 @@
                           Author: <?php echo $txt;
                         } ?>
             </div>
-            
+
             <div id="detailAbstract">
             <?php
                 $area = get_field('abstract');
@@ -37,7 +37,7 @@
                          } ?>
             </div>
 
-            <div id="detailTags"><?php the_tags(); ?></div>
+            <div id="detailTags"><?php the_tags('',' '); ?></div>
         </div>
 
         <div id="buttons">
