@@ -222,8 +222,11 @@ a{
 #bookInfo{
     display: inline-block;
     font-family: sans-serif;
-    padding-left: 30px;
-    padding-top: 15px;
+    width: 60%;
+    height: 150px;
+    text-align: center;
+    padding-top: 10px;
+    vertical-align: top;
 }
 
 /*Detail page*/
