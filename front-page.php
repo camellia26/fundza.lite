@@ -27,6 +27,7 @@
                         );
                         $new_query = new WP_Query($new_args);
                     ?>
+                    <?php /**
                     <?php if ($new_query->have_posts()): ?>
                         <?php while ($new_query->have_posts()) : $new_query->the_post(); ?>
                             <div id="topThumbnail">
@@ -38,6 +39,7 @@
                                     <a href="<?php the_permalink(); ?>"><img src="<?php echo $imgurl[0]; ?>"></a>
                                 <?php } ?>
                             </div>
+                    **/ ?>
                 </div>
             <div class="seeMore"><a href="<?php echo home_url('/collections'); ?>">See more</a></div>
         </div>
