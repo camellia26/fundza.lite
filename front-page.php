@@ -21,12 +21,19 @@
                     <?php
                         $new_args = array(
                             'post_type' => 'post',
-                            'post_per_page' => 3,
+                            'posts_per_page' => 3,
                             'order_by' => 'post_date',
                             'order' => 'DESC',
                         );
                         $new_query = new WP_Query($new_args);
                     ?>
+                    <?php if ($new_query->have_posts()): ?>
+                        <?php while ($new_query->have_posts()) : $new_query->the_post(); ?>
+                            <?php the_title(); ?>
+                        <?php endwhile; ?>
+                    <?php else: ?>
+                        <p>There is no posts.</p>
+                    <?php endif; ?>
                 </div>
             <div class="seeMore"><a href="<?php echo home_url('/collections'); ?>">See more</a></div>
         </div>
