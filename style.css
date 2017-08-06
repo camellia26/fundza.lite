@@ -245,6 +245,11 @@ a{
 #indexTags{
     font-weight: bold;
 }
+#indexTags a{
+    border-radius: 2px;
+    background: #5ba297;
+    color: #fff;
+}
 
 /*Detail page*/
 #thumbnail{
