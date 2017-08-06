@@ -18,3 +18,9 @@ function is_mobile(){
  $pattern = '/'.implode('|', $useragents).'/i';
  return preg_match($pattern, $_SERVER['HTTP_USER_AGENT']);
 }
+function add_meta_query_vars( $public_query_vars ) {
+	$public_query_vars[] = 'meta_key';
+	$public_query_vars[] = 'meta_value';
+	return $public_query_vars;
+}
+add_filter( 'query_vars', 'add_meta_query_vars' );

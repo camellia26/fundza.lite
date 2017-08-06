@@ -1,7 +1,14 @@
 <?php get_header(); ?>
 
     <div id="pageBody">
-        <div id="sortFunction"><a href="#">&#x25BC;Sort by &#91; new &#47; popoular &#47; old &#93;</a></div>
+        <div id="sortFunction">
+            <select onChange="location.href=value;">
+                <option value="<?php the_permalink(); ?>">Sort by</option>
+                <option value="<?php echo add_query_arg( array('order' => 'DESC') ); ?>">New</option>
+                <option value="<?php echo add_query_arg( array('order' => 'ASC') ); ?>">Old</option>
+                <option value="<?php echo add_query_arg( array('meta_key' => 'views', 'orderby' => 'meta_value_num', 'order' => 'DESC'), get_pagenum_link(1) ); ?>">Popular</option>
+            </select>
+        </div>
 
         <?php if (have_posts()): ?>
             <?php while (have_posts()) : the_post(); ?>

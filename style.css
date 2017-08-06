@@ -151,13 +151,9 @@ a{
     padding-right: 10px;
     padding-top: 1px;
 }
-.collectionArray{ /*temporary*/
+.collectionArray{
     text-align: center;
     padding-top: 10px;
-}
-.pdf{ /*temporary*/
-    padding-left: 5px;
-    padding-right: 5px;
 }
 #topThumbnail{
     display: inline-block;
