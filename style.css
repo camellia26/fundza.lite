@@ -244,6 +244,8 @@ a{
     font-weight: bold;
     font-size: 18px;
     padding-bottom: 3px;
+}
+#indexTitle a{
     text-decoration: none;
 }
 #indexAuthor{
