@@ -240,7 +240,7 @@ a{
     padding-bottom: 3px;
 }
 #indexDate{
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 }
 #indexTags{
     font-weight: bold;
@@ -250,6 +250,7 @@ a{
     background: #5ba297;
     color: #fff;
     padding: 3px;
+    text-decoration: none;
 }
 
 /*Detail page*/
