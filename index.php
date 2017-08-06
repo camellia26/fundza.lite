@@ -18,10 +18,10 @@
                             <?php } ?>
                         </div>
                         <div id="bookInfo">
-                            <?php echo get_the_title(); ?><br>
-                            <?php echo get_field('author'); ?><br>
-                            <?php echo get_the_date(); ?><br>
-                            <?php the_tags(); ?>
+                            <div id="indexTitle"><?php echo get_the_title(); ?></div>
+                            <div id="indexAuthor"><?php echo get_field('author'); ?></div>
+                            <div id="indexDate"><?php echo get_the_date(); ?></div>
+                            <div id="indexTags"><?php the_tags(); ?></div>
                         </div>
                     </div>
 
