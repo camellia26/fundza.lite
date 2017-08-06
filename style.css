@@ -121,7 +121,7 @@ a{
 /*Our Vision*/
 #ourVision{
     width: 100%;
-    background-color: #c4df9b;
+    background-color: #dbe9a1;
     height: 60px;
     margin: 0;
     font-family: sans-serif;
@@ -149,7 +149,7 @@ a{
 .seeMore{
     float: right;
     padding-right: 10px;
-    padding-top: 3px;
+    padding-top: 1px;
 }
 .collectionArray{ /*temporary*/
     text-align: center;
