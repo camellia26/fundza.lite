@@ -215,15 +215,13 @@ a{
     padding-left: 30px;
 }
 #bookThumb img{
-    max-width: 100px;
+    max-width: 70px;
     height: auto;
 }
 #bookInfo{
     display: inline-block;
     font-family: sans-serif;
-    float: right;
     padding-top: 25px;
-    padding-right: 20px;
 }
 
 /*Detail page*/

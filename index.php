@@ -23,7 +23,6 @@
                             <?php echo get_the_date(); ?><br>
                             <?php the_tags(); ?>
                         </div>
-                        <div style="clear:both"></div>
                     </div>
 
                 </div>
