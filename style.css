@@ -234,12 +234,13 @@ a{
 #indexTitle{
     font-weight: bold;
     font-size: 18px;
+    padding-bottom: 3px;
 }
 #indexAuthor{
-
+    padding-bottom: 3px;
 }
 #indexDate{
-
+    padding-bottom: 3px;
 }
 #indexTags{
     font-weight: bold;
