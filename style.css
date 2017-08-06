@@ -231,6 +231,19 @@ a{
     padding-left: 15px;
     vertical-align: top;
 }
+#indexTitle{
+    font-weight: bold;
+    font-size: 18px;
+}
+#indexAuthor{
+
+}
+#indexDate{
+
+}
+#indexTags{
+    font-weight: bold;
+}
 
 /*Detail page*/
 #thumbnail{
