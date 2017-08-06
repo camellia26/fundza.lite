@@ -24,7 +24,7 @@
                 </div>
             <div class="seeMore"><a href="<?php echo home_url('/collections'); ?>">See more</a></div>
         </div>
-        
+
         <div id="ourVision">
             <div id="fundzaPolicy">Reading Changes Lives :&#041;</div>
         </div>
@@ -36,10 +36,10 @@
                     <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
                     <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
                 </div>
-            <div class="seeMore"><a href=""<?php echo home_url('/collections'); ?>>See more</a></div>
+            <div class="seeMore"><a href="<?php echo home_url('/collections'); ?>">See more</a></div>
         </div>
     </div>
 
     <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
-    
+
 <?php get_footer(); ?>
