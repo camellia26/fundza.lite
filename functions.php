@@ -24,3 +24,4 @@ function add_meta_query_vars( $public_query_vars ) {
 	return $public_query_vars;
 }
 add_filter( 'query_vars', 'add_meta_query_vars' );
+add_theme_support( 'post-thumbnails', array( 'post' ) );
