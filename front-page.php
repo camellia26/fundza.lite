@@ -53,9 +53,9 @@
         <div id="popularCollections">
             <div class="collections">Popular</div>
                 <div class="collectionArray">
-                    <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
-                    <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
-                    <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
+                    <?php if (function_exists('get_most_viewed')): ?>
+                        <?php get_most_viewed('post', 3); ?>
+                    <?php endif; ?>
                 </div>
             <div class="seeMore"><a href="<?php echo home_url('/collections'); ?>">See more</a></div>
         </div>
