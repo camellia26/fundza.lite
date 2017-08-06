@@ -18,9 +18,26 @@
         <div id="newCollections">
             <div class="collections">New Collections</div>
                 <div class="collectionArray">
-                    <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
-                    <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
-                    <span class="pdf"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/sample.png"></a></span>
+                    <?php
+                        $new_args = array(
+                            'post_type' => 'post',
+                            'post_per_page' => 3,
+                            'order_by' => 'post_date',
+                            'order' => 'DESC',
+                        );
+                        $new_query = new WP_Query($new_args);
+                    ?>
+                    <?php if ($new_query->have_posts()): ?>
+                        <?php while ($new_query->have_posts()) : $new_query->the_post(); ?>
+                            <div id="topThumbnail">
+                                <?php
+                                    $img = get_field('thumbnail');
+                                    $imgurl = wp_get_attachment_image_src($img);
+                                    if($imgurl){
+                                ?>
+                                    <a href="<?php the_permalink(); ?>"><img src="<?php echo $imgurl[0]; ?>"></a>
+                                <?php } ?>
+                            </div>
                 </div>
             <div class="seeMore"><a href="<?php echo home_url('/collections'); ?>">See more</a></div>
         </div>
