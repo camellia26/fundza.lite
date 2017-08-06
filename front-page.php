@@ -29,7 +29,15 @@
                     ?>
                     <?php if ($new_query->have_posts()): ?>
                         <?php while ($new_query->have_posts()) : $new_query->the_post(); ?>
-                            <?php the_title(); ?>
+                            <div id="topThumbnail">
+                                <?php
+                                    $img = get_field('thumbnail');
+                                    $imgurl = wp_get_attachment_image_src($img);
+                                    if($imgurl){
+                                ?>
+                                    <a href="<?php the_permalink(); ?>"><img src="<?php echo $imgurl[0]; ?>"></a>
+                                <?php } ?>
+                            </div>
                         <?php endwhile; ?>
                     <?php else: ?>
                         <p>There is no posts.</p>
