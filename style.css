@@ -214,6 +214,8 @@ a{
 #bookThumb{
     display: inline-block;
     padding-left: 30px;
+    width: 30%;
+    text-align: center;
 }
 #bookThumb img{
     max-width: 100px;
@@ -222,10 +224,11 @@ a{
 #bookInfo{
     display: inline-block;
     font-family: sans-serif;
-    width: 60%;
-    height: 150px;
+    width: 50%;
+    height: 120px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
+    padding-left: 15px;
     vertical-align: top;
 }
 
