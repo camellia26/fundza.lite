@@ -27,7 +27,6 @@
                         );
                         $new_query = new WP_Query($new_args);
                     ?>
-                    <?php echo $new_query; ?>
                 </div>
             <div class="seeMore"><a href="<?php echo home_url('/collections'); ?>">See more</a></div>
         </div>
