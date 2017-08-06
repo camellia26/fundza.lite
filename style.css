@@ -364,3 +364,6 @@ input[type="button"]{
     transform: translateY(3px);
     border-bottom: none;
 }
+#downloadButton a{
+    text-decoration: none;
+}
