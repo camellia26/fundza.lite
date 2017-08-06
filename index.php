@@ -9,7 +9,6 @@
                 <option value="<?php echo add_query_arg( array('meta_key' => 'views', 'orderby' => 'meta_value_num', 'order' => 'DESC') ); ?>">Popular</option>
             </select>
         </div>
-        <?php echo get_post_meta($post->ID , 'views' ,true); ?>
 
         <?php if (have_posts()): ?>
             <?php while (have_posts()) : the_post(); ?>
