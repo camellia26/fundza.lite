@@ -6,9 +6,21 @@
         <?php if (have_posts()): ?>
             <?php while (have_posts()) : the_post(); ?>
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <div id="thumbnail">
+                      <?php
+                          $img = get_field('thumbnail');
+                          $imgurl = wp_get_attachment_image_src($img);
+                          if($imgurl){
+                      ?>
+                      <img src="<?php echo $imgurl[0]; ?>">
+                      <?php } ?>
+                    </div>
                     <?php echo get_the_date(); ?>
                     <?php the_permalink(); ?>
                     <?php echo get_the_title(); ?>
+                    <?php echo get_field('author'); ?>
+                    <?php echo get_field('abstract'); ?>
+                    <?php the_tags(); ?>
                 </div>
             <?php endwhile; ?>
         <?php else: ?>
