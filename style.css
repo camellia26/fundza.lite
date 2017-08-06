@@ -238,15 +238,18 @@ a{
 }
 #indexAuthor{
     padding-bottom: 3px;
+    font-size: 14px;
 }
 #indexDate{
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    font-size: 13px;
 }
 #indexTags{
     font-weight: bold;
+    font-size: 13px;
 }
 #indexTags a{
-    border-radius: 2px;
+    border-radius: 3px;
     background: #5ba297;
     color: #fff;
     padding: 3px;
