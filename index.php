@@ -8,7 +8,7 @@
                 <option value="<?php echo add_query_arg( array('order' => 'ASC') ); ?>">Old</option>
                 <option value="<?php echo add_query_arg( array('meta_key' => 'views', 'orderby' => 'meta_value_num', 'order' => 'DESC') ); ?>">Popular</option>
             </select>
-            <?php wp_dropdown_categories('show_count=1&show_option_none=Choose Category'); ?>
+            <?php wp_dropdown_categories('show_count=0&show_option_none=Choose Category'); ?>
             <script type="text/javascript"><!--
                 var dropdown = document.getElementById("cat");
                 function onCatChange() {
