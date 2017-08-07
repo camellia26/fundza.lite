@@ -8,6 +8,16 @@
                 <option value="<?php echo add_query_arg( array('order' => 'ASC') ); ?>">Old</option>
                 <option value="<?php echo add_query_arg( array('meta_key' => 'views', 'orderby' => 'meta_value_num', 'order' => 'DESC') ); ?>">Popular</option>
             </select>
+            <?php wp_dropdown_categories('show_count=1&show_option_none=Choose Category'); ?>
+            <script type="text/javascript"><!--
+                var dropdown = document.getElementById("cat");
+                function onCatChange() {
+		              if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
+			                 location.href = "<?php echo get_option('home'); ?>/?cat="+dropdown.options[dropdown.selectedIndex].value;
+		                             }
+                                 }
+                           dropdown.onchange = onCatChange;
+            --></script>
         </div>
 
         <?php if (have_posts()): ?>
