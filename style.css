@@ -178,6 +178,7 @@ a{
 }
 
 /*top button*/
+img.topButton{ display: none; }
 .pagetop {
     display: none;
     position: fixed;
