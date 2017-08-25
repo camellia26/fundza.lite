@@ -10,6 +10,25 @@
 
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png">
+
+    <!-- top button -->
+    <script>
+    $(document).ready(function() {
+        var pagetop = $('.pagetop');
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+            } else {
+                pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function () {
+                $('body, html').animate({ scrollTop: 0 }, 500);
+                return false;
+            });
+        });
+    </script>
+
 <?php wp_head(); ?>
 </head>
 
