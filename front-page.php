@@ -57,7 +57,7 @@
                         <?php get_most_viewed('post', 3); ?>
                     <?php endif; ?>
                 </div>
-            <div class="seeMore"><a href="<?php echo home_url('/collections'); ?>">See more</a></div>
+            <div class="seeMore"><a href="<?php echo home_url('/collections/?meta_key=views&orderby=meta_value_num&order=DESC'); ?>">See more</a></div>
         </div>
     </div>
 
