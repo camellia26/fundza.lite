@@ -54,7 +54,7 @@
 
     <!-- top button -->
     <p class="pagetop">
-        <a href="#page">
+        <a href="#">
             <img src="<?php echo get_template_directory_uri(); ?>/images/topButton.png" class="topButton" alt="Back to top">
         </a>
     </p>
