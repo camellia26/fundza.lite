@@ -53,24 +53,6 @@
     <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
 
     <!-- top button -->
-    <script>
-    $(document).ready(function() {
-        var pagetop = $('.pagetop');
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                pagetop.fadeIn();
-            } else {
-                pagetop.fadeOut();
-                }
-            });
-            pagetop.click(function () {
-                $('body, html').animate({ scrollTop: 0 }, 500);
-                return false;
-            });
-        });
-    </script>
-
-    <!-- top button -->
     <p class="pagetop">
         <a href="#">
             <img src="<?php echo get_template_directory_uri(); ?>/images/topButton.png" class="topButton" alt="Back to top">
