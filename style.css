@@ -42,7 +42,7 @@ a{
     transition: transform 0.3s linear 0s; /*0.3s is the time to transit*/
     width: 250px; /*Menu's width*/
     z-index: 1000;
-    height: 183px;
+    height: 245px;
     border: solid 1px #fcd700;
 }
 .hamElements{
