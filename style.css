@@ -178,9 +178,8 @@ a{
 }
 
 /*top button*/
-/*img.topButton{ display: none; }*/
 .pagetop {
-    /*display: none;*/
+    display: none;
     position: fixed;
     bottom: 15px;
     right: 15px;
@@ -207,6 +206,7 @@ a{
     -moz-opacity: 0.5;
     opacity: 0.5;
 }
+img.topButton{ display: block; }
 
 /*Footer*/
 #pageFooter{
