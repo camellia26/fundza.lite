@@ -1,5 +1,23 @@
 <?php get_header(); ?>
 
+    <!-- top button -->
+    <script>
+    $(document).ready(function() {
+        var pagetop = $('.pagetop');
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+            } else {
+                pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function () {
+                $('body, html').animate({ scrollTop: 0 }, 500);
+                return false;
+            });
+        });
+    </script>
+
     <div id="pageBody">
         <div id="sortFunction">
             <select onChange="location.href=value;">
