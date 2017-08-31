@@ -168,6 +168,7 @@ a{
 
 /*Back to top*/
 #pageTopLink{
+    clear: both;
     height: 20px;
 }
 #pageTopLink a{
@@ -294,6 +295,9 @@ img.topButton{ display: block; }
     color: #fff;
     padding: 3px;
     text-decoration: none;
+}
+.wp-pagenavi{
+    text-align: center !important;
 }
 
 /*Detail page*/
