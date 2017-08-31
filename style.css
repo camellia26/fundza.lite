@@ -279,11 +279,11 @@ img.topButton{ display: block; }
 }
 #indexAuthor{
     padding-bottom: 5px;
-    font-size: 14px;
+    font-size: 15px;
 }
 #indexDate{
     padding-bottom: 10px;
-    font-size: 13px;
+    font-size: 12px;
 }
 #indexTags{
     font-weight: bold;
