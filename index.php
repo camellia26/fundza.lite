@@ -50,6 +50,8 @@
 
     </div>
 
+    <?php wp_pagenavi(); ?>
+
     <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
 
     <!-- top button -->
