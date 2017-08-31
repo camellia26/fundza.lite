@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png">
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.12.4.min.js"></script>
 
     <!-- top button -->
         <script>
@@ -28,7 +29,7 @@
                 });
             });
         </script>
-        
+
 <?php wp_head(); ?>
 </head>
 
