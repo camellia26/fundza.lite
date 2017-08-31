@@ -298,6 +298,7 @@ img.topButton{ display: block; }
 }
 .wp-pagenavi{
     text-align: center !important;
+    margin-top: 10px;
 }
 
 /*Detail page*/
