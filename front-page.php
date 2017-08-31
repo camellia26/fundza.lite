@@ -53,16 +53,23 @@
         <div id="popularCollections">
             <div class="collections">Popular</div>
                 <div class="collectionArray">
-                    //popular books thumbnail function
+                    <!-- popular books thumbnail function -->
                     <?php
-                        $args = array( 'posts_per_page' => 10,
-                        'orderby' => 'meta_value_num',//meta_valueではないので注意
+                        $args = array( 'posts_per_page' => 3,
+                        'orderby' => 'meta_value_num',
                         'meta_key' =>'views',
                         'order' => 'DESC',
                         );
                         $my_query = new WP_Query( $args );
                         if($my_query->have_posts()) : while($my_query->have_posts()) : $my_query->the_post(); ?>
                             <?php echo get_post_meta($post->ID , 'views' ,true); ?>
+                            <?php
+                                $img = get_field('thumbnail');
+                                $imgurl = wp_get_attachment_image_src($img);
+                                if($imgurl){
+                            ?>
+                                <a href="<?php the_permalink(); ?>"><img src="<?php echo $imgurl[0]; ?>"></a>
+                            <?php } ?>
                         <?php endwhile; endif; wp_reset_postdata(); ?>
                 </div>
             <div class="seeMore"><a href="<?php echo home_url('/collections/?meta_key=views&orderby=meta_value_num&order=DESC'); ?>">See more</a></div>
