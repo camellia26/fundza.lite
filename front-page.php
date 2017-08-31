@@ -26,8 +26,7 @@
                             'order' => 'DESC',
                         );
                         $new_query = new WP_Query($new_args);
-                    ?>
-                    <?php if ($new_query->have_posts()): ?>
+                        if ($new_query->have_posts()): ?>
                         <?php while ($new_query->have_posts()) : $new_query->the_post(); ?>
                             <div id="topThumbnail">
                                 <?php
@@ -62,15 +61,19 @@
                         );
                         $my_query = new WP_Query( $args );
                         if($my_query->have_posts()) : while($my_query->have_posts()) : $my_query->the_post(); ?>
-                            <?php echo get_post_meta($post->ID , 'views' ,true); ?>
-                            <?php
-                                $img = get_field('thumbnail');
-                                $imgurl = wp_get_attachment_image_src($img);
-                                if($imgurl){
-                            ?>
-                                <a href="<?php the_permalink(); ?>"><img src="<?php echo $imgurl[0]; ?>"></a>
-                            <?php } ?>
-                        <?php endwhile; endif; wp_reset_postdata(); ?>
+                            <div id="topThumbnail">
+                                <?php
+                                    $img = get_field('thumbnail');
+                                    $imgurl = wp_get_attachment_image_src($img);
+                                    if($imgurl){
+                                ?>
+                                    <a href="<?php the_permalink(); ?>"><img src="<?php echo $imgurl[0]; ?>"></a>
+                                <?php } ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php else: ?>
+                        <p>There is no posts.</p>
+                    <?php endif; ?>
                 </div>
             <div class="seeMore"><a href="<?php echo home_url('/collections/?meta_key=views&orderby=meta_value_num&order=DESC'); ?>">See more</a></div>
         </div>
