@@ -52,7 +52,7 @@
         </div>
 
         <div id="popularCollections">
-            <div class="collections">Popular</div>
+            <div class="collections">Popular Collections</div>
                 <div class="collectionArray">
                     <!-- popular books thumbnail function -->
                     <?php
