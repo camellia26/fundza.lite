@@ -46,6 +46,7 @@
                 <div class="hamElements"><a href="<?php echo home_url('/collections') ?>">COLLECTIONS</a></div>
                 <div class="hamElements"><a href="<?php echo home_url('/about') ?>">ABOUT</a></div>
                 <div class="hamElements"><a href="<?php echo home_url('/terms') ?>">T&amp;Cs</a></div>
+                <div class="hamElements"><a href="<?php echo home_url('/contact') ?>">CONTACT</a></div>
             </div>
             <div style="clear:both"></div>
         </div>
