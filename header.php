@@ -38,6 +38,7 @@
         <div id="topBar">
             <div id="logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/top.png"></a></div>
             <!-- Hamberger Menu -->
+            <!-- You can add new section here, ham-menu. Please change style.css as well after addition. -->
             <input id="menu-cb" type="checkbox" value="off">
             <label id="menu-icon" for="menu-cb">≡</label>
             <label id="menu-background" for="menu-cb"></label>

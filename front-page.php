@@ -5,10 +5,12 @@
             <!-- Random Message -->
             <div id="message">
             <script>
-                //Message can be added to the array. Like "How do you do?". Don't forget conma(,) after each messages except for last one.
+                //Message can be added to the array. Like "How do you do?". Don't forget conma(,) after each messages.
                 var mbox = ["Welcome to our Offline Library!",
                             "How's it going?",
-                            "Hello :)"];
+                            "Hello :)",
+                            "How do you do?",
+                           ];
                 var mssg = mbox[Math.floor(Math.random() * mbox.length)];
                 document.write(mssg);
             </script>
@@ -60,7 +62,8 @@
                         'order' => 'DESC',
                         );
                         $my_query = new WP_Query( $args );
-                        if($my_query->have_posts()) : while($my_query->have_posts()) : $my_query->the_post(); ?>
+                        if($my_query->have_posts()) : ?>
+                        <?php while($my_query->have_posts()) : $my_query->the_post(); ?>
                             <div id="topThumbnail">
                                 <?php
                                     $img = get_field('thumbnail');

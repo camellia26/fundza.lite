@@ -296,6 +296,7 @@ img.topButton{ display: block; }
     padding: 3px;
     text-decoration: none;
 }
+/*Pager*/
 .wp-pagenavi{
     text-align: center !important;
     margin-top: 10px;
