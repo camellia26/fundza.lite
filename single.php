@@ -63,10 +63,6 @@
             </div>
         <?php } ?>
 
-                <script>
-                    showContent(1);
-                </script>
-
         <div style="clear:both;"></div>
 
         <div id="staticContentBody">
