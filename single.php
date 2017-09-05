@@ -42,7 +42,7 @@
 
         <?php $page = get_query_var('page'); ?>
 
-        <?php if($page == 1){?>
+        <?php if($page == 0){?>
             <div id="buttons">
                 <form id="readButton">
                     <input type="button" value="Read on the page" onclick="showContent(1)">
