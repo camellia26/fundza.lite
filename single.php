@@ -63,6 +63,7 @@
             <?php if(have_posts()): while(have_posts()): the_post(); ?>
                  <div id="staticContentText">
                      <?php the_content(); ?>
+                     <?php wp_link_pages(); ?>
                  </div>
             <?php endwhile;endif; ?>
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
