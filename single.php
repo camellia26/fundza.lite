@@ -60,7 +60,8 @@
                         if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
                            <?php } ?>
             </div>
-        <?php }else{?>
+        <?php } ?>
+        <?php if($page != 0){?>
             <script>
                 document.getElementById("staticContentBody").style.display="block";
                 document.getElementById("staticContentText").style.display="block";
