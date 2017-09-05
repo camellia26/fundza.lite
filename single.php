@@ -42,7 +42,7 @@
 
         <?php $page = get_query_var('page'); ?>
 
-        <?php if($page == 0){?>
+        <?php if($page == 1){?>
             <div id="buttons">
                 <form id="readButton">
                     <input type="button" value="Read on the page" onclick="showContent(1)">
@@ -54,12 +54,17 @@
                             document.getElementById("staticContentText").style.display="block";
                         }
                     }
-                    </script>
+                </script>
 
                     <?php $file = get_field('pdf');
                         if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
                            <?php } ?>
             </div>
+        <?php }else{?>
+            <script>
+                document.getElementById("staticContentBody").style.display="block";
+                document.getElementById("staticContentText").style.display="block";
+            </script>
         <?php } ?>
         <div style="clear:both;"></div>
 
