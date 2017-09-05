@@ -66,6 +66,7 @@
                      <?php wp_link_pages(); ?>
                      <?php $page = get_query_var( 'page', 1 ); ?>
                      <h1>Page: <?php echo (int) $page; ?></h1>
+                     <?php var_dump($page); ?>
                  </div>
             <?php endwhile;endif; ?>
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
