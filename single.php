@@ -40,23 +40,27 @@
             <div id="detailTags"><?php the_tags('',' '); ?></div>
         </div>
 
-        <div id="buttons">
-            <form id="readButton">
-                <input type="button" value="Read on the page" onclick="showContent(1)">
-            </form>
-            <script>
-                function showContent(num){
-                    if (num == 1){
-                        document.getElementById("staticContentBody").style.display="block";
-                        document.getElementById("staticContentText").style.display="block";
-                    }
-                }
-            </script>
+        <?php $page = get_query_var('page'); ?>
 
-            <?php $file = get_field('pdf');
-                  if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
-                     <?php } ?>
-        </div>
+        <?php if($page == 0){?>
+            <div id="buttons">
+                <form id="readButton">
+                    <input type="button" value="Read on the page" onclick="showContent(1)">
+                </form>
+                <script>
+                    function showContent(num){
+                        if (num == 1){
+                            document.getElementById("staticContentBody").style.display="block";
+                            document.getElementById("staticContentText").style.display="block";
+                        }
+                    }
+                    </script>
+
+                    <?php $file = get_field('pdf');
+                        if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
+                           <?php } ?>
+            </div>
+        <?php } ?>
         <div style="clear:both;"></div>
 
         <div id="staticContentBody">
@@ -64,9 +68,7 @@
                  <div id="staticContentText">
                      <?php the_content(); ?>
                      <?php wp_link_pages(); ?>
-                     <?php $page = get_query_var( 'page', 1 ); ?>
                      <h1>Page: <?php echo (int) $page; ?></h1>
-                     <?php var_dump($page); ?>
                  </div>
             <?php endwhile;endif; ?>
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
