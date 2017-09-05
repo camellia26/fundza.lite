@@ -64,6 +64,8 @@
                  <div id="staticContentText">
                      <?php the_content(); ?>
                      <?php wp_link_pages(); ?>
+                     <?php $paged = get_query_var( 'paged', 1 ); ?>
+                     <h1>Page: <?php echo (int) $paged; ?></h1>
                  </div>
             <?php endwhile;endif; ?>
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
