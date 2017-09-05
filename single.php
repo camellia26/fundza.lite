@@ -64,7 +64,7 @@
                  <div id="staticContentText">
                      <?php the_content(); ?>
                      <?php wp_link_pages(); ?>
-                     <?php $paged = get_query_var( 'paged', 1 ); ?>
+                     <?php $paged = get_query_var( 'page', 1 ); ?>
                      <h1>Page: <?php echo (int) $paged; ?></h1>
                  </div>
             <?php endwhile;endif; ?>
