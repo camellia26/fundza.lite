@@ -71,8 +71,8 @@
         <div id="staticContentBody">
             <?php if(have_posts()): while(have_posts()): the_post(); ?>
                  <div id="staticContentText">
-                     <?php the_content(); ?>
                      <?php wp_link_pages(); ?>
+                     <?php the_content(); ?>
                      <h1>Page: <?php echo (int) $page; ?></h1>
                  </div>
             <?php endwhile;endif; ?>
