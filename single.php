@@ -64,8 +64,8 @@
         <?php } ?>
         <?php if($page != 0){?>
             <script>
-                document.getElementById("staticContentBody").style.display="block";
-                document.getElementById("staticContentText").style.display="block";
+                document.getElementById("staticContentBody").style.display="block !important";
+                document.getElementById("staticContentText").style.display="block !important";
             </script>
         <?php } ?>
         <div style="clear:both;"></div>
