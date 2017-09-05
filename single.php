@@ -61,19 +61,20 @@
                         if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
                            <?php } ?>
             </div>
-        <?php }else{?>
+        <?php } ?>
+
                 <script>
                     showContent(1);
                 </script>
-        <?php } ?>
+
         <div style="clear:both;"></div>
 
         <div id="staticContentBody">
             <?php if(have_posts()): while(have_posts()): the_post(); ?>
                  <div id="staticContentText">
-                     <?php wp_link_pages(); ?>
                      <?php the_content(); ?>
-                     <h1>Page: <?php echo (int) $page; ?></h1>
+                     <?php wp_link_pages(); ?>
+                     <h1>Chapter: <?php echo (int) $page; ?></h1>
                  </div>
             <?php endwhile;endif; ?>
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
