@@ -1,6 +1,8 @@
 <?php get_header(); ?>
+    <?php $page = get_query_var('page'); ?>
 
     <div id="pageBody">
+        <?php if($page == 0){ ?>
         <div id="thumbnail">
           <?php
               $img = get_field('thumbnail');
@@ -10,9 +12,9 @@
           <img src="<?php echo $imgurl[0]; ?>">
           <?php } ?>
         </div>
+        <?php } ?>
 
         <div id="bookDetail">
-
             <div id="detailTitle"><?php the_title(); ?></div>
 
             <div id="detailAuthor">
@@ -23,6 +25,7 @@
                         } ?>
             </div>
 
+            <?php if($page == 0){ ?>
             <div id="detailAbstract">
             <?php
                 $area = get_field('abstract');
@@ -39,9 +42,7 @@
 
             <div id="detailTags"><?php the_tags('',' '); ?></div>
         </div>
-
-        <?php $page = get_query_var('page'); ?>
-        <?php var_dump($page);?>
+        <?php } ?>
 
         <?php if($page == 0){?>
             <div id="buttons">
@@ -75,6 +76,7 @@
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
         </div><!--content-->
 
+        <!-- Show contents on following chapters -->
         <?php if($page != 1){ ?>
             <script>
                 document.getElementById("staticContentBody").style.display="block";
