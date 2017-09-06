@@ -317,9 +317,11 @@ img.topButton{ display: block; }
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
+    text-align: center;
 }
 #detailAuthor{
     margin-bottom: 10px;
+    text-align: center;
 }
 #detailAbstract{
     text-align: left;
