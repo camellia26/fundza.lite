@@ -305,7 +305,6 @@ img.topButton{ display: block; }
 /*Detail page*/
 #thumbnail{
     margin-top: 10px;
-    margin-bottom: 10px;
     text-align: center;
 }
 #bookDetail{
@@ -316,6 +315,7 @@ img.topButton{ display: block; }
 #detailTitle{
     font-size: 20px;
     font-weight: bold;
+    margin-top: 10px;
     margin-bottom: 5px;
     text-align: center;
 }
