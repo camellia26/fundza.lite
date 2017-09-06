@@ -41,6 +41,7 @@
         </div>
 
         <?php $page = get_query_var('page'); ?>
+        <?php var_dump($page);?>
 
         <?php if($page == 0){?>
             <div id="buttons">
