@@ -75,13 +75,12 @@
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
         </div><!--content-->
 
-        <?php if($page != 0){ ?>
+        <?php if($page != 1){ ?>
             <script>
                 document.getElementById("staticContentBody").style.display="block";
                 document.getElementById("staticContentText").style.display="block";
             </script>
         <?php } ?>
-        <?php var_dump($page);?>
 
     </div>
 
