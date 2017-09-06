@@ -61,15 +61,6 @@
                         if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
                            <?php } ?>
             </div>
-        <?php }else{ ?>
-            <?php var_dump($page); ?>
-            <script>
-                var contentBody = document.getElementById('staticContentBody');
-                var contentText = document.getElementById('staticContentText');
-                contentBody.style.setProperty('display', 'block', 'important');
-                contentText.style.setProperty('display', 'block', 'important');
-                document.write("Test");
-            </script>
         <?php } ?>
 
         <div style="clear:both;"></div>
@@ -84,6 +75,17 @@
             <?php endwhile;endif; ?>
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
         </div><!--content-->
+
+        <?php if($page != 0){ ?>
+            <?php var_dump($page); ?>
+            <script type="text/javascript">
+                var contentBody = document.getElementById('staticContentBody');
+                var contentText = document.getElementById('staticContentText');
+                contentBody.style.setProperty('display', 'block', 'important');
+                contentText.style.setProperty('display', 'block', 'important');
+                alert("Success!");
+            </script>
+        <?php } ?>
 
     </div>
 
