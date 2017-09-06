@@ -93,4 +93,9 @@
         </a>
     </p>
 
+    <!-- Comment Template -->
+    <?php if( count( $pages ) == 1 || count( $pages ) == get_query_var( 'page' )){ ?>
+        <?php comments_template(); ?>
+    <?php } ?>
+
 <?php get_footer(); ?>
