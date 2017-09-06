@@ -63,6 +63,12 @@
             </div>
         <?php }else{ ?>
             <?php var_dump($page); ?>
+            <script>
+                var target_1 = document.getElementById('staticContentBody');
+                var target_2 = document.getElementById('staticContentText');
+                target_1.style.display = 'block';
+                target_2.style.display = 'block';
+            </script>
         <?php } ?>
 
         <div style="clear:both;"></div>
