@@ -405,3 +405,7 @@ input[type="button"]{
     transform: translateY(3px);
     border-bottom: none;
 }
+#pagelink{
+    font-family: sans-serif;
+    font-size: 16px;
+}
