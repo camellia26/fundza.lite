@@ -61,6 +61,8 @@
                         if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
                            <?php } ?>
             </div>
+        <?php }else{ ?>
+            <?php var_dump($page); ?>
         <?php } ?>
 
         <div style="clear:both;"></div>
