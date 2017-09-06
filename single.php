@@ -68,6 +68,7 @@
                 var contentText = document.getElementById('staticContentText');
                 contentBody.style.setProperty('display', 'block', 'important');
                 contentText.style.setProperty('display', 'block', 'important');
+                document.write("Test");
             </script>
         <?php } ?>
 
