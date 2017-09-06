@@ -41,7 +41,6 @@
         </div>
 
         <?php $page = get_query_var('page'); ?>
-        <?php var_dump($page); ?>
 
         <?php if($page == 0){?>
             <div id="buttons">
@@ -70,20 +69,15 @@
                  <div id="staticContentText">
                      <?php the_content(); ?>
                      <?php wp_link_pages(); ?>
-                     <h1>Chapter: <?php echo (int) $page; ?></h1>
                  </div>
             <?php endwhile;endif; ?>
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
         </div><!--content-->
 
         <?php if($page != 0){ ?>
-            <?php var_dump($page); ?>
-            <script type="text/javascript">
-                var contentBody = document.getElementById('staticContentBody');
-                var contentText = document.getElementById('staticContentText');
-                contentBody.style.setProperty('display', 'block', 'important');
-                contentText.style.setProperty('display', 'block', 'important');
-                alert("Success!");
+            <script>
+                document.getElementById("staticContentBody").style.display="block";
+                document.getElementById("staticContentText").style.display="block";
             </script>
         <?php } ?>
 
