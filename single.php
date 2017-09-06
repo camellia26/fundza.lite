@@ -41,8 +41,8 @@
             </div>
 
             <div id="detailTags"><?php the_tags('',' '); ?></div>
+            <?php } ?>
         </div>
-        <?php } ?>
 
         <?php if($page == 0){?>
             <div id="buttons">
