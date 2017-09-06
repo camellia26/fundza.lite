@@ -81,6 +81,7 @@
                 document.getElementById("staticContentText").style.display="block";
             </script>
         <?php } ?>
+        <?php var_dump($page);?>
 
     </div>
 
