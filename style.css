@@ -409,3 +409,6 @@ input[type="button"]{
     font-family: sans-serif;
     font-size: 18px;
 }
+#ratings{
+    margin-top: 10px;
+}
