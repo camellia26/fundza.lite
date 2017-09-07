@@ -426,8 +426,12 @@ input[type="button"]{
     padding-left: 10px;
     margin-top: 40px;
 }
+#comments{
+    padding-left: 10px;
+    margin-top: 10px;
+}
 #comment{
-    width: 80%;
+    width: 90%;
 }
 .comment-body{
     margin-top: 10px;
