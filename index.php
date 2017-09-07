@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-    <!-- Hide other field of Rating -->
-    <style>#rateOtherElements{display: none;}</style>
-
     <div id="pageBody">
         <div id="sortFunction">
             <select onChange="location.href=value;">
