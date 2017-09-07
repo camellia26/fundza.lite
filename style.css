@@ -414,7 +414,7 @@ input[type="button"]{
     text-align: center;
     color: #ffffff;
     background-color: #787878;
-    border: 2px solid;
+    border: 2px solid #111111;
     border-radius: 3px;
     padding: 5px;
 }
@@ -429,5 +429,5 @@ input[type="button"]{
     width: 80%;
 }
 .comment-body{
-    margin-top: 5px;
+    margin-top: 10px;
 }
