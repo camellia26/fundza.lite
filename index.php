@@ -37,6 +37,12 @@
                         <div id="bookInfo">
                             <div id="indexTitle"><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></div>
                             <div id="indexAuthor"><?php echo get_field('author'); ?></div>
+                            <div id="indexRate">
+                                <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
+                                <script>
+                                    document.getElementById("rateOtherElements").style.display="none";
+                                </script>
+                            </div>
                             <div id="indexDate"><?php echo get_the_date(); ?></div>
                             <div id="indexTags"><?php the_tags('',' '); ?></div>
                         </div>
