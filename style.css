@@ -413,6 +413,9 @@ input[type="button"]{
     margin-top: 20px;
     text-align: center;
 }
+.commentsTemp{
+    padding-left: 10px;
+}
 #comment{
     width: 80%;
 }
