@@ -25,6 +25,10 @@
                         } ?>
             </div>
 
+            <?php if($page == 0){?>
+                <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
+            <?php } ?>
+
             <?php if($page == 0){ ?>
             <div id="detailAbstract">
             <?php
