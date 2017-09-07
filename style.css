@@ -265,7 +265,7 @@ img.topButton{ display: block; }
     width: 50%;
     height: 120px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 15px;
     vertical-align: top;
 }
@@ -286,6 +286,7 @@ img.topButton{ display: block; }
     height: 12px !important;
 }
 #indexDate{
+    margin-top: 3px; 
     padding-bottom: 10px;
     font-size: 12px;
 }
