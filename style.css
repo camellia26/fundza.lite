@@ -409,7 +409,7 @@ input[type="button"]{
     font-family: sans-serif;
     font-size: 18px;
 }
-a #pagelink{
+#pagelink a{
     text-align: center;
     border: 1px solid;
     border-radius: 3px;
