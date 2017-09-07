@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+    <!-- Hide other field of Rating -->
+    <style>#rateOtherElements{display: none;}</style>
+
     <div id="pageBody">
         <div id="sortFunction">
             <select onChange="location.href=value;">
@@ -39,7 +42,6 @@
                             <div id="indexAuthor"><?php echo get_field('author'); ?></div>
                             <div id="indexRate">
                                 <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
-                                <style>#rateOtherElements{display: none;}</style>
                             </div>
                             <div id="indexDate"><?php echo get_the_date(); ?></div>
                             <div id="indexTags"><?php the_tags('',' '); ?></div>
