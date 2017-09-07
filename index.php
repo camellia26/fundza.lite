@@ -2,12 +2,14 @@
 
     <div id="pageBody">
         <div id="sortFunction">
+            <!-- Sort by new, old, popular -->
             <select onChange="location.href=value;">
                 <option value="">Sort by</option>
                 <option value="<?php echo add_query_arg( array('order' => 'DESC') ); ?>">New</option>
                 <option value="<?php echo add_query_arg( array('order' => 'ASC') ); ?>">Old</option>
                 <option value="<?php echo add_query_arg( array('meta_key' => 'views', 'orderby' => 'meta_value_num', 'order' => 'DESC') ); ?>">Popular</option>
             </select>
+            <!-- Sort by category -->
             <?php wp_dropdown_categories('show_count=0&show_option_none=Choose Category'); ?>
             <script type="text/javascript"><!--
                 var dropdown = document.getElementById("cat");
@@ -53,6 +55,7 @@
 
     </div>
 
+    <!-- Page Navigation -->
     <?php wp_pagenavi(); ?>
 
     <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>

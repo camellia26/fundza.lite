@@ -25,6 +25,7 @@
                         } ?>
             </div>
 
+            <!-- Hide rateOtherElements on top page-->
             <?php if($page == 0){?>
                 <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
                 <script>
@@ -52,6 +53,7 @@
         </div>
 
         <?php if($page == 0){?>
+        <!-- Buttons only appear on the first page -->
             <div id="buttons">
                 <form id="readButton">
                     <input type="button" value="Read on the page" onclick="showContent(1)">
@@ -65,6 +67,7 @@
                     }
                 </script>
 
+                    <!-- If pdf file isn't selected, the button doesn't appear -->
                     <?php $file = get_field('pdf');
                         if($file){ ?> <a href="<?php echo $file; ?>" target="_blank" id="downloadButton">Download as pdf</a>
                            <?php } ?>
@@ -91,7 +94,7 @@
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
         </div><!--content-->
 
-        <!-- Show contents on following chapters -->
+        <!-- Show contents on chapters except for first without button-->
         <?php if($page != 1){ ?>
             <script>
                 document.getElementById("staticContentBody").style.display="block";
