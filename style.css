@@ -419,3 +419,6 @@ input[type="button"]{
 #comment{
     width: 80%;
 }
+.comment-body{
+    margin-top: 5px;
+}
