@@ -410,10 +410,12 @@ input[type="button"]{
     font-size: 18px;
 }
 #pagelink a{
+    text-decoration: none;
     text-align: center;
-    border: 1px solid;
+    background-color: #787878;
+    border: 2px solid #ffffff;
     border-radius: 3px;
-    padding: 3px;
+    padding: 5px;
 }
 .ratings{
     margin-top: 20px;
