@@ -353,6 +353,7 @@ img.topButton{ display: block; }
     color: #fff;
     padding: 3px;
     text-decoration: none;
+    display: inline-block;
 }
 
 #buttons{

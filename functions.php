@@ -25,3 +25,8 @@ function add_meta_query_vars( $public_query_vars ) {
 }
 add_filter( 'query_vars', 'add_meta_query_vars' );
 add_theme_support( 'post-thumbnails', array( 'post' ) );
+function redirect_after_comment() {
+  wp_safe_redirect( get_the_permalink() );
+  exit();
+}
+add_filter( 'comment_post_redirect', 'redirect_after_comment' );
