@@ -39,15 +39,12 @@
                             <div id="indexAuthor"><?php echo get_field('author'); ?></div>
                             <div id="indexRate">
                                 <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
+                                <style>#rateOtherElements{display: none;}</style>
                             </div>
                             <div id="indexDate"><?php echo get_the_date(); ?></div>
                             <div id="indexTags"><?php the_tags('',' '); ?></div>
                         </div>
                     </div>
-
-                    <script>
-                        document.getElementById("rateOtherElements").style.display="none";
-                    </script>
 
                 </div>
             <?php endwhile; ?>
