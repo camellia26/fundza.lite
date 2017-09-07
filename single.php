@@ -72,6 +72,13 @@
                      <?php the_content(); ?>
                      <?php wp_link_pages('before=<p id="pagelink">Chapter:'); ?>
                  </div>
+
+                 <!-- Rate and Templates. Only shown on the last page -->
+                 <?php if( count( $pages ) == 1 || count( $pages ) == get_query_var( 'page' )){ ?>
+                     <div class="ratings"><?php if(function_exists('the_ratings')) { the_ratings(); } ?></div>
+                 <?php } ?>
+
+                 <div class="commentsTemp"><?php comments_template(); ?></div>
             <?php endwhile;endif; ?>
             <div id="pageTopLink"><a href="#">&#x25B2;Back to top</a></div>
         </div><!--content-->
@@ -92,12 +99,5 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/topButton.png" class="topButton" alt="Back to top">
         </a>
     </p>
-
-    <!-- Rate and Templates. Only shown on the last page -->
-    <?php if( count( $pages ) == 1 || count( $pages ) == get_query_var( 'page' )){ ?>
-        <div class="ratings"><?php if(function_exists('the_ratings')) { the_ratings(); } ?></div>
-    <?php } ?>
-
-    <div class="commentsTemp"><?php comments_template(); ?></div>
 
 <?php get_footer(); ?>
