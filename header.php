@@ -10,8 +10,8 @@
 
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 
-    <!-- Hide other field of Rating on Index Page -->
     <?php if(is_home()){ ?>
+        <!-- Hide other field of Rating on Index Page -->
         <style>#rateOtherElements{display: none;}</style>
     <?php } ?>
 
