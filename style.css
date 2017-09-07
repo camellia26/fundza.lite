@@ -328,6 +328,7 @@ img.topButton{ display: block; }
     font-size: 14px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 #detailDate{
