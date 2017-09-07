@@ -434,5 +434,8 @@ input[type="button"]{
     width: 90%;
 }
 .comment-body{
-    margin-top: 10px;
+    margin-top: 15px;
+}
+.logged-in-as{
+    display: none;
 }
