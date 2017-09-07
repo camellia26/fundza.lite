@@ -27,6 +27,9 @@
 
             <?php if($page == 0){?>
                 <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
+                <script>
+                    document.getElementById("rateOtherElements").style.display="none";
+                </script>
             <?php } ?>
 
             <?php if($page == 0){ ?>
