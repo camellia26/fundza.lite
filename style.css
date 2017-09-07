@@ -412,8 +412,9 @@ input[type="button"]{
 #pagelink a{
     text-decoration: none;
     text-align: center;
+    color: #ffffff;
     background-color: #787878;
-    border: 2px solid #ffffff;
+    border: 2px solid;
     border-radius: 3px;
     padding: 5px;
 }
