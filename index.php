@@ -39,9 +39,6 @@
                             <div id="indexAuthor"><?php echo get_field('author'); ?></div>
                             <div id="indexRate">
                                 <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
-                                <script>
-                                    document.getElementById("rateOtherElements").style.display="none";
-                                </script>
                             </div>
                             <div id="indexDate"><?php echo get_the_date(); ?></div>
                             <div id="indexTags"><?php the_tags('',' '); ?></div>
@@ -66,5 +63,9 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/topButton.png" class="topButton" alt="Back to top">
         </a>
     </p>
+
+    <script>
+        document.getElementById("rateOtherElements").style.display="none";
+    </script>
 
 <?php get_footer(); ?>
