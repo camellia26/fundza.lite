@@ -45,6 +45,10 @@
                         </div>
                     </div>
 
+                    <script>
+                        document.getElementById("rateOtherElements").style.display="none";
+                    </script>
+
                 </div>
             <?php endwhile; ?>
         <?php else: ?>
@@ -63,9 +67,5 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/topButton.png" class="topButton" alt="Back to top">
         </a>
     </p>
-
-    <script>
-        document.getElementById("rateOtherElements").style.display="none";
-    </script>
 
 <?php get_footer(); ?>
