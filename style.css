@@ -451,6 +451,12 @@ input[type="button"]{
 .comment-body{
     margin-top: 15px;
 }
+.comment-notes{
+    display: none;
+}
+.comment-form-url{
+    display: none;
+}
 .logged-in-as{
     display: none;
 }
