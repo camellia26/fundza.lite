@@ -448,6 +448,9 @@ input[type="button"]{
     margin-top: 30px;
     text-align: center;
 }
+#rateOtherElements{
+    font-size: 10px;
+}
 #respond{
     padding-left: 10px;
     margin-top: 30px;
