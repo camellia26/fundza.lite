@@ -452,6 +452,7 @@ input[type="button"]{
 }
 #rateOtherElements{
     font-size: 10px;
+    display: inline !important;
 }
 #respond{
     padding-left: 10px;
