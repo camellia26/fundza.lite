@@ -434,7 +434,6 @@ input[type="button"]{
 }
 .pages{
     display: inline-block;
-    margin-bottom: 10px;
 }
 .first{
     display: inline-block;
