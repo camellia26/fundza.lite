@@ -433,6 +433,9 @@ input[type="button"]{
     display: inline-block;
     margin-bottom: 10px;
 }
+.first{
+    display: inline-block;
+}
 .last{
     display: inline-block;
     margin-top: 10px;
